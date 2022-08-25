@@ -10,8 +10,17 @@ module.exports = {
        'black': '#171717',
        'white': '#fff',
        'divider': '#747577',
+       'mailsection': '#201f1f',
+       'sectionthreeheader': '#35315d',
+       'cardborder': '#efefef',
+       'sectionfourbackground': '#f9f9f9'
     },
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'hero-pattern': "url('./assets/contactbg.jpg')"
+       })
+
+    },
   },
   plugins: [],
 }

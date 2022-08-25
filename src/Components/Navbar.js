@@ -10,7 +10,7 @@ const Navbar = () => {
      <div className='flex md:mx-20 mx-10 justify-between'>
     <div className='md:flex mt-5 md:mt-0'>
     <img
-      className='md:w-[28%] w-30%'
+      className='md:w-[28%] w-30% opacity-85'
       src={Logo}
       alt='Logo'
       />

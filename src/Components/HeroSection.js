@@ -37,7 +37,7 @@ const HeroSection = () => {
              <p className='ml-2'>Tam not almış Forex sitesi!</p>
            </div>
            <button
-           className='mt-5 p-4 bg-buttonback rounded-md font-medium'
+           className='mt-5 p-4 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l rounded-md font-medium'
            >Create a Demo Account</button>
         </div>
         <div className='flex items-center justify-center'>

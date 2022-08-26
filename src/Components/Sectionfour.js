@@ -3,9 +3,9 @@ import homescfourimg from '../assets/homescfourimg.png'
 
 const Sectionfour = () => {
   return (
-    <div className='bg-sectionfourbackground pt-20'>
-         <div className='flex mx-20'>
-             <div className='mr-40 m-20 w-[90%]'>
+    <div className='bg-sectionfourbackground pt-16 pb-'>
+         <div className='md:flex md:mx-20'>
+             <div className='md:mr-40 md:m-20 md:w-[90%] mx-8'>
                    <div className=''>
                        <h1 className='text-3xl font-extrabold text-sectionthreeheader'>Zwei flinke Boxer jagen die quirlige Eva und.</h1>
                    </div>
@@ -20,14 +20,14 @@ const Sectionfour = () => {
                    </p>
 
                    <button
-                   className='bg-buttonback p-4 mt-4 text-white font-semibold rounded-md'
+                   className='bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l p-4 mt-6 text-white font-semibold rounded-md'
                    >
                        Demo Hesap Olustur
                    </button>
              </div>
-             <div>
+             <div className='flex justify-center items-center text-center mt-10'>
                 <img
-                className='float-right'
+                className='float-right w-[90%]'
                 src={homescfourimg}
                 alt=''
                 /> 

@@ -7,13 +7,13 @@ import stepsbeforeicon from '../assets/stepsbeforeicon.svg'
 
 const Sectionthree = () => {
   return (
-    <div className='bg-white font-raleway pt-24 pb-24'>
+    <div className='bg-white font-raleway md:pt-24 pb-24 pt-7'>
         <div className='items-center justify-center text-center flex'>
-               <div className='w-[36%]'>
-               <h4 className='text-2xl text-sectionthreeheader font-bold'>3 adımda kolayca yatırım yapmaya başlayın.</h4>
+               <div className='md:w-[36%] w-[70%]'>
+               <h4 className='md:text-2xl text-xl text-sectionthreeheader font-bold'>3 adımda kolayca yatırım yapmaya başlayın.</h4>
                </div>
         </div>
-        <div className='flex mx-16 mt-20'>
+        <div className='md:flex md:mx-16 md:mt-20 mt-10'>
            <section className='border-2 border-cardborder p-7 mx-3 rounded-lg'>
                 <img
                 className='w-[20%]'
@@ -25,7 +25,7 @@ const Sectionthree = () => {
                 Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter.
                 </p>
            </section>
-           <section className='border-2 border-cardborder p-7 mx-3 rounded-lg'>
+           <section className='border-2 border-cardborder p-7 mx-3 rounded-lg md:mt-0 mt-10'>
                 <img
                 className='w-[16%]'
                 src={userkaricon}
@@ -36,7 +36,7 @@ const Sectionthree = () => {
                 Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter.
                 </p>
            </section>
-           <section className='border-2 border-cardborder p-7 mx-3 rounded-lg'>
+           <section className='border-2 border-cardborder p-7 mx-3 rounded-lg md:mt-0 mt-10'>
                 <img
                 className='w-[20%]'
                 src={usermoneyicon}

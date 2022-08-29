@@ -1,8 +1,11 @@
 import React from 'react'
-import Star from '../assets/star_icon.svg'
-import Sideimg from '../assets/home_slide_img.png'
+import Star from '../../assets/star_icon.svg'
+import Sideimg from '../../assets/home_slide_img.png'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
+   
+
   return (
     <div className='md:flex md:mx-20 md:ml-14 mx-10 pb-20'>
         <div className='md:w-[90%] w-[100%] text-white md:mt-28 mt-10 md:ml-32'>
@@ -37,8 +40,9 @@ const HeroSection = () => {
              <p className='ml-2'>Tam not almış Forex sitesi!</p>
            </div>
            <button
-           className='mt-5 p-4 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l rounded-md font-medium'
-           >Create a Demo Account</button>
+           className='mt-5 p-4 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l rounded-md font-medium' tag={Link} to='/demoaccount'
+           >Create a DemoAccount
+           </button>
         </div>
         <div className='flex items-center justify-center'>
           <img

@@ -1,12 +1,14 @@
 import React from 'react'
-import HeroSection from '../Components/HeroSection'
-import MailSection from '../Components/MailSection'
-import NumbersSection from '../Components/NumbersSection'
-import Sectionfive from '../Components/Sectionfive'
-import Sectionfour from '../Components/Sectionfour'
-import Sectionnine from '../Components/Sectionnine'
-import Sectionsix from '../Components/Sectionsix'
-import Sectionthree from '../Components/Sectionthree'
+import HeroSection from '../Components/HomeComponents/HeroSection'
+import MailSection from '../Components/HomeComponents/MailSection'
+import NumbersSection from '../Components/HomeComponents/NumbersSection'
+import Sectioneight from '../Components/HomeComponents/Sectioneight'
+import Sectionfive from '../Components/HomeComponents/Sectionfive'
+import Sectionfour from '../Components/HomeComponents/Sectionfour'
+import Sectionnine from '../Components/HomeComponents/Sectionnine'
+import Sectionseven from '../Components/HomeComponents/Sectionseven'
+import Sectionsix from '../Components/HomeComponents/Sectionsix'
+import Sectionthree from '../Components/HomeComponents/Sectionthree'
 
 const Homepage = () => {
   return (
@@ -19,6 +21,8 @@ const Homepage = () => {
       <Sectionfour/>
       <Sectionfive/>
       <Sectionsix/>
+      <Sectionseven/>
+      <Sectioneight/>
       <Sectionnine/>
       </div>
     </div>

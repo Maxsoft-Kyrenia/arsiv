@@ -1,8 +1,8 @@
 import React from 'react'
-import hm_one_icon1 from '../assets/hm_one_icon1.svg'
-import hm_one_icon2 from '../assets/hm_one_icon2.svg'
-import hm_one_icon3 from '../assets/hm_one_icon3.svg'
-import hm_one_icon4 from '../assets/hm_one_icon4.svg'
+import hm_one_icon1 from '../../assets/hm_one_icon1.svg'
+import hm_one_icon2 from '../../assets/hm_one_icon2.svg'
+import hm_one_icon3 from '../../assets/hm_one_icon3.svg'
+import hm_one_icon4 from '../../assets/hm_one_icon4.svg'
 
 const Sectionsix = () => {
   return (

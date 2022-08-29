@@ -1,5 +1,5 @@
 import React from 'react'
-import homescfourimg from '../assets/homescfourimg.png'
+import homescfourimg from '../../assets/homescfourimg.png'
 
 const Sectionfour = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import corporatemanpng from '../assets/corporatemanpng.png'
-import guvenicons from '../assets/guvenicons.svg'
-import ozsermayeicon from '../assets/ozsermayeicon.svg'
-import deneyimiconsi from '../assets/deneyimiconsi.svg'
-import alsaticons from '../assets/alsaticons.svg'
+import corporatemanpng from '../../assets/corporatemanpng.png'
+import guvenicons from '../../assets/guvenicons.svg'
+import ozsermayeicon from '../../assets/ozsermayeicon.svg'
+import deneyimiconsi from '../../assets/deneyimiconsi.svg'
+import alsaticons from '../../assets/alsaticons.svg'
 
 const Sectionfive = () => {
   return (

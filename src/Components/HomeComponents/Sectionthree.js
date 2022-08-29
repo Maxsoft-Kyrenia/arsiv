@@ -1,9 +1,9 @@
 import React from 'react'
-import usercreate from '../assets/usercreateicon.svg'
-import userkaricon from '../assets/userkaricon.svg'
-import usermoneyicon from '../assets/usermoneyicon.svg'
-import stepsaftericon from '../assets/stepsaftericon.svg'
-import stepsbeforeicon from '../assets/stepsbeforeicon.svg'
+import usercreate from '../../assets/usercreateicon.svg'
+import userkaricon from '../../assets/userkaricon.svg'
+import usermoneyicon from '../../assets/usermoneyicon.svg'
+import stepsaftericon from '../../assets/stepsaftericon.svg'
+import stepsbeforeicon from '../../assets/stepsbeforeicon.svg'
 
 const Sectionthree = () => {
   return (
@@ -20,8 +20,8 @@ const Sectionthree = () => {
                 src={usercreate}
                 alt='icon'
                 />
-                <h3 className='text-sectionthreeheader font-bold mt-2 '>Ücretsiz Bir Hesap Oluştur</h3>
-                <p>
+                <h3 className='text-sectionthreeheader font-bold mt-2 text-xl'>Ücretsiz Bir Hesap Oluştur</h3>
+                <p className='mt-3'>
                 Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter.
                 </p>
            </section>
@@ -31,8 +31,8 @@ const Sectionthree = () => {
                 src={userkaricon}
                 alt='icon'
                 />
-                <h3 className='text-sectionthreeheader font-bold mt-2'>Hesabına Para Ekle</h3>
-                <p>
+                <h3 className='text-sectionthreeheader font-bold mt-2 text-xl'>Hesabına Para Ekle</h3>
+                <p className='mt-3'>
                 Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter.
                 </p>
            </section>
@@ -42,8 +42,8 @@ const Sectionthree = () => {
                 src={usermoneyicon}
                 alt='icon'
                 />
-                <h3 className='text-sectionthreeheader font-bold mt-2'>Kar Elde Etmeye Başla!</h3>
-                <p>
+                <h3 className='text-sectionthreeheader font-bold mt-2 text-xl'>Kar Elde Etmeye Başla!</h3>
+                <p className='mt-3'>
                 Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter.
                 </p>
            </section>

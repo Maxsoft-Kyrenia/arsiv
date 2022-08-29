@@ -1,6 +1,6 @@
 import React from 'react'
-import Background from '../assets/contactbg.jpg'
-import '../assets/Mailsection.css';
+import Background from '../../assets/contactbg.jpg'
+import '../../assets/Mailsection.css';
 
 const MailSection = () => {
   return (

@@ -3,17 +3,20 @@ import maxsoftlab_logo from '../assets/maxsoftlab_logo.svg'
 import Logo from '../assets/logo.svg'
 import google_play from '../assets/google_play.svg'
 import app_store from '../assets/app_store.svg'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
          <div className='bg-black md:h-[375px] h-[550px] font-raleway'>
              <div className='mt-0 bottom-0 right-0 left-0 w-[100%] md:h-[300px] h-[400px] bg-buttonback -skew-y-3 origin-left'>
-       <div className='md:flex flex md:flex-row flex-col md:mt-0 md:m-10 md:p-16 skew-y-3 text-white'>
-       <img
-      className='md:w-[20%] w-28% opacity-85 md:mt-0 mt-10'
+       <div className='md:flex flex md:flex-row flex-col items-center md:mt-0 md:m-10 md:p-16 skew-y-3 text-white'>
+      <Link to='/'>
+      <img
+      className='md:w-[90%] w-[78%] opacity-85 md:mt-0 mt-10 cursor-pointer'
       src={Logo}
       alt='Logo'
       />
+      </Link>
     <div className='ml-8 md:flex'>
   <div className='flex justify-between'>
   <section className='mt-12 mx-6'>

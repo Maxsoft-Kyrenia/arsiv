@@ -4,7 +4,6 @@ import Sideimg from '../../assets/home_slide_img.png'
 import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
-   
 
   return (
     <div className='md:flex md:mx-20 md:ml-14 mx-10 pb-20'>
@@ -40,9 +39,13 @@ const HeroSection = () => {
              <p className='ml-2'>Tam not almış Forex sitesi!</p>
            </div>
            <button
-           className='mt-5 p-4 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l rounded-md font-medium' tag={Link} to='/demoaccount'
-           >Create a DemoAccount
+           className='mt-5 p-4 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l rounded-md font-medium'>  
+           <Link to='/demoaccount' className=''>
+           Create a Demo Account
+           </Link>
            </button>
+          
+
         </div>
         <div className='flex items-center justify-center'>
           <img

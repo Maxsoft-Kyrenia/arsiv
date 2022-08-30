@@ -4,7 +4,7 @@ import '../../assets/Mailsection.css';
 
 const MailSection = () => {
   return (
-    <div className='font-raleway md:px-20 px-10 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5'>
+    <div className='font-raleway md:px-20 px-5 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5'>
          <div className='md:flex text-white z-10 flex-col md:flex-row '>
            <div className='mt-20 md:mt-10 md:flex flex-col justify-center items-center text-center md:justify-start md:items-start md:text-start'>
            <div className='md:w-[34%]'>
@@ -36,7 +36,7 @@ const MailSection = () => {
            </div>
            <div>
              <div className='bg-mailsection p-5 md:mt-0 mt-10'>
-               <div className='flex'>
+               <div className='md:flex'>
                 <section className='text-start flex flex-col'>
                 <label className='font-semibold'>Adınız</label>
                <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-fit'/>

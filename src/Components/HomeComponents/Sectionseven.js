@@ -6,7 +6,7 @@ const Sectionseven = () => {
   return (
     <div className='md:p-20 p-4 mt-10'>
         <div className='md:flex bg-sectionfourbackground'>
-             <div className='md:w-[60%] p-10'>
+             <div className='md:w-[60%] md:p-10 p-4'>
                 <div className='md:w-[60%]'>
                     <h2 className='text-buttonback text-3xl font-semibold'>Zwei flinke Boxer jagen 
                     die quirlige Eva und.</h2>

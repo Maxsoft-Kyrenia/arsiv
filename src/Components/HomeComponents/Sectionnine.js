@@ -5,7 +5,7 @@ const Sectionnine = () => {
   return (
     <div className='pt-20 md:pr-20 md:pl-20 md:px-0 px-4 pb-20'>
         <div className='bg-sectionfourbackground rounded-md md:flex'>
-             <div className='w-[100%] p-16'>
+             <div className='w-[100%] md:p-16 p-3'>
                  <h4 className='text-sectionthreeheader text-2xl font-bold'>Hemen Şimdi Kolay bir Şekilde 
                  Demo Hesap Oluşturun.</h4>
                  <p className='mt-3'>

@@ -7,7 +7,7 @@ import desktop from '../../assets/deskto_play.svg'
 
 const Sectioneight = () => {
   return (
-    <div className='p-20 bg-buttonback mt-10'>
+    <div className='md:p-20 p-6 bg-buttonback mt-10'>
          <div className='md:flex w-[100%] md:justify-between '>
               <div className='w-[100%] mr-20'>
                     <img

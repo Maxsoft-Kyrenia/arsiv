@@ -7,9 +7,16 @@ import Sectiontwo from '../Components/CorporateComponent/Sectiontwo'
 const CorporatePage = () => {
   return (
     <div className='font-raleway'>
+      {/*FIRST SECTION*/}
         <HeroSection/>
+
+        {/*SECOND SECTION*/}
         <Sectiontwo/>
+
+        {/*THIRD SECTION*/}
         <NumbersSection/>
+
+        {/*FOURTH SECTION*/}
         <SectionFour/>
     </div>
   )

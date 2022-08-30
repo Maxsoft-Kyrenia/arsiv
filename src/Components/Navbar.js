@@ -4,55 +4,95 @@ import {IonIcon} from "react-ion-icon";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  
+  //This open controls the menu icon when using mobile devices
   const [open, setOpen] = useState(true)
+  //This controls the opening of the platform item children,
   const [menuopen, setmenuOpen] = useState(false)
+  //This opens the language toggle to access the language options
   const [langopen, setlangOpen] = useState(false)
 
   return (
-          <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative'>
+     //First Div wrapping the whole Navbar
+    <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative'>
+    
+    
+    {/* Menu Bar Container */}
      <div className='flex md:mx-20 mx-8 justify-between z-0'>
-    <div className='md:flex mt-5 md:mt-0'>
- <Link to='/' className=''>
- <img
-      className=' opacity-85 cursor-pointer'
-      src={Logo}
-      alt='Logo'
-      />
-  </Link>
-      <div onClick={() => setOpen(!open)} className='text-4xl absolute right-3 top-6 cursor-pointer md:hidden md: items-center pt-[-3]'>
-            <ion-icon name={open ? 'menu': 'close'}></ion-icon>
-      </div>
-      <ul className={`text-white md-text-black pl-12 md:mx-5 md:mt-4 mt-0 md:flex md:z-auto z-[-1] font-bold cursor-pointer  transition-all duration-500 ease-in ${open ? 'hidden': 'hidden top-20'}`}>
-        <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in '>
-        <Link to='/corporate' className=''>
-           CORPORATE
-           </Link>
-        </li>
-        <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in'>
-        <Link to='/' className=''>
-           ANALYZES
-           </Link>
-        </li>
-        <li onClick={() => setmenuOpen(!menuopen)} className='mx-2 flex flex-row hover:underline hover:transition-all hover:duration-500 ease-in' >
-          PLATFORM
-          <span  className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
-      <IonIcon name="chevron-down-outline"/>
-      </span>
-   <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
-   <li className='m-1'>Test 1</li>
-      <li className='m-1'>Test 1</li>
-      <li className='m-1'>Test 1</li>
-   </span>
-        </li>   
-        <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in'>
-        <Link to='/contact' className=''>
-           CONTACT
-           </Link>
-        </li>
-           </ul>
-    </div>
-    <div className='flex z-0'>
+
+
+         {/* LOGO AND NAVIGATION LINKS */}
+          <div className='md:flex mt-5 md:mt-0'>
+
+              {/* LOGO  */}
+                  <Link to='/' className=''>
+                         <img
+                             className=' opacity-85 cursor-pointer'
+                             src={Logo}
+                             alt='Logo'
+                         />
+                   </Link>
+               {/* LOGO  */}
+
+                 {/* Menu toogle open and close  */}
+                      <div onClick={() => setOpen(!open)} className='text-4xl absolute right-3 top-6 cursor-pointer md:hidden md: items-center pt-[-3]'>
+                            <ion-icon name={open ? 'menu': 'close'}></ion-icon>
+                      </div>
+                 {/* Menu toogle open and close  */}
+
+               {/* Navigation Items Group [Unordered List] */}   
+                 <ul className={`text-white md-text-black pl-12 md:mx-5 md:mt-4 mt-0 md:flex md:z-auto z-[-1] font-bold cursor-pointer  transition-all duration-500 ease-in ${open ? 'hidden': 'hidden top-20'}`}>
+                     
+                      {/* Navigation Item List */}   
+                    <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in '>
+                         <Link to='/corporate' className=''>
+                           CORPORATE
+                         </Link>
+                    </li>
+                        {/* Navigation Item */}  
+
+
+                      {/* Navigation Items List items */}  
+                     <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in'>
+                           <Link to='/' className=''>
+                              ANALYZES
+                            </Link>
+                      </li>
+                       {/* Navigation Items List items */}  
+
+
+                      {/* Navigation Items List items */}  
+                    <li onClick={() => setmenuOpen(!menuopen)} className='mx-2 flex flex-row hover:underline hover:transition-all hover:duration-500 ease-in' >
+                          PLATFORM
+                       <span  className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
+                           <IonIcon name="chevron-down-outline"/>
+                       </span>
+                            <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
+                                <li className='m-1'>Test 1</li>
+                                <li className='m-1'>Test 1</li>
+                                <li className='m-1'>Test 1</li>
+                            </span>
+                      </li>   
+                     {/* Navigation Items List items */}  
+
+
+                     {/* Navigation Items List items */}  
+                    <li className='mx-2 hover:underline hover:transition-all hover:duration-500 ease-in'>
+                         <Link to='/contact' className=''>
+                             CONTACT
+                         </Link>
+                    </li>
+                       {/* Navigation Items List items */}  
+
+
+                 </ul>
+               {/* Navigation Items Group [Unordered List] */}   
+
+
+       </div>
+         {/* LOGO AND NAVIGATION LINKS */}
+
+                 {/* Buttons on Navbar */}
+                      <div className='flex z-0'>
         <Link to='/demoaccount' className=''>  
       <button 
       className={`bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l md:p-3 md:rounded-md md:font-semibold md:px-6 md:mx-3 hidden md:block`}>
@@ -72,9 +112,14 @@ const Navbar = () => {
         </ul>
    </span>
       </button>
-    </div>
+                      </div>
+                  {/* Buttons on Navbar */}
      </div>
-     <div className='bg-white h-full text-black float-right fixed right-0 top-0 z-10  block'>
+      {/* Menu Bar Container */}
+
+
+          {/* Menu bar for mobile devices */}
+             <div className='bg-white h-full text-black float-right fixed right-0 top-0 z-10  block'>
   <div className={`${open ? 'hidden transition-all duration-500 ease-in': 'm-12 transition-all duration-500 ease-in'} transition-all duration-500 ease-in`}>
   <span onClick={() => setOpen(!open)} className='pr-10 pt-10 transition-all duration-500 ease-in'>
   <ion-icon name={open ? 'menu': 'close'}></ion-icon>
@@ -107,9 +152,15 @@ const Navbar = () => {
            </li>
          </ul>
   </div>
-    </div>
+            </div>
+          {/* Menu bar for mobile devices */}
+
+      {/* Divider for menu bar */}
       <hr className='text-divider h-2 md:mx-16 md:mt-4 mt-2'></hr>
-      </div>
+       {/* Divider for menu bar */}
+
+
+    </div>
   )
 }
 

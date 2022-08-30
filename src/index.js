@@ -7,7 +7,9 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  //Wrapping the whole application in the BrowserRouter tags so that every component can have access to 
+  //the react-router-dom services.
+  <BrowserRouter forceRefresh={true}>
     <App />
   </BrowserRouter>
  

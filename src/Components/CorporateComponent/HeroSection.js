@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className='bg-newblack text-white'>
        <div className='md:flex w-[100%]'>
 
-            <div className='w-[100%] px-20 pt-20 pb-20'>
+            <div className='w-[100%] md:px-20 px-5 pt-20 pb-20'>
                 <div className='w-[60%]'>
                 <h1 className='font-semibold text-2xl'>Zwei flinke Boxer jagen die 
 quirlige Eva und.</h1>

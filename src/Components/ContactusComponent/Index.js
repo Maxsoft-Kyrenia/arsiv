@@ -6,7 +6,7 @@ const Index = () => {
        <div className='md:flex'>
              <div>
              <div className='bg-mailsection p-5 md:mt-0 mt-10 text-white'>
-               <div className='flex'>
+               <div className='md:flex'>
                 <section className='text-start flex flex-col'>
                 <label className='font-semibold'>Adınız</label>
                <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-fit'/>
@@ -52,7 +52,7 @@ const Index = () => {
                 <p className='mt-5'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invid.</p>
                
-             <div className='flex mt-5'>
+             <div className='md:flex mt-5'>
              <section className='flex bg-newblack p-3 rounded-md items-start mr-5'>
                  <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
                  <svg xmlns="http://www.w3.org/2000/svg" width="31.502" height="31.502" viewBox="0 0 31.502 31.502">
@@ -64,7 +64,7 @@ nonumy eirmod tempor invid.</p>
                     <p className='font-semibold'>0850 545 65 85</p>
                    </div>
                </section>
-               <section className='flex bg-newblack p-3 rounded-md items-start'>
+               <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5'>
                  <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
                  <svg id="email" xmlns="http://www.w3.org/2000/svg" width="31.502" height="23.208" viewBox="0 0 31.502 23.208">
 											<g id="Group_39" data-name="Group 39" transform="translate(0 6.546)">
@@ -85,8 +85,8 @@ nonumy eirmod tempor invid.</p>
                    </div>
                </section>
              </div>
-             <div className='flex mt-5'>
-             <section className='flex bg-newblack mr-2 rounded-md items-center w-[50%] h-48px p-3'>
+             <div className='md:flex mt-5'>
+             <section className='flex bg-newblack mr-2 rounded-md items-center md:w-[50%] h-48px p-3'>
                  <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
                  <svg xmlns="http://www.w3.org/2000/svg" width="28.346" height="32.251" viewBox="0 0 28.346 32.251">
 											<g id="location" transform="translate(-31)">
@@ -106,13 +106,13 @@ nonumy eirmod tempor invid.</p>
                    <div className='ml-3'>
                    <p>Headquarters:</p>
                     <span className=''>
-                    <p className='font-semibold w-[80%]'>Suite 15, 1st Floor, Oliaji Trade 
+                    <p className='font-semibold md:w-[80%]'>Suite 15, 1st Floor, Oliaji Trade 
 											Centre, Francis Rachel Street, 
 											Victoria, Mahe, P.O. Box 1004,</p>
                     </span>
                    </div>
                </section>
-               <section className='flex bg-newblack p-3 rounded-md items-start'>
+               <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5'>
                  <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
 											<path id="phone-call" d="M27.131,20.44c-.074-.058-5.431-3.92-6.9-3.643-.7.124-1.1.6-1.909,1.561-.13.155-.441.526-.683.789a11.265,11.265,0,0,1-1.486-.6,12.33,12.33,0,0,1-5.689-5.689,11.212,11.212,0,0,1-.6-1.486c.265-.243.635-.554.794-.688.954-.8,1.434-1.2,1.558-1.906.255-1.458-3.6-6.853-3.645-6.9A2.06,2.06,0,0,0,7.03,1C5.466,1,1,6.793,1,7.769c0,.057.082,5.82,7.189,13.05C15.412,27.918,21.174,28,21.231,28,22.208,28,28,23.534,28,21.97A2.055,2.055,0,0,0,27.131,20.44Z" transform="translate(-1 -1)" fill="#fff"/>

@@ -8,6 +8,9 @@ function App() {
 
   return (
    <>
+   {/* Application theme layout, the navbar and 
+   footer appear in every page that is loaded in the layout tag.
+   Routes are defined in the layout component */}
    <Navbar/>
     <Layout/>
     <Footer/>

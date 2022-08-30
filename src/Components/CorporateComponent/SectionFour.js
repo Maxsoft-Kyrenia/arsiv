@@ -4,9 +4,9 @@ import logo from '../../assets/logo.svg'
 
 const SectionFour = () => {
   return (
-    <div className='md:p-10 p-4 mt-10 rounded-md mb-10'>
+    <div className='md:p-10 p-2 mt-10 rounded-md mb-10'>
         <div className='md:flex bg-black text-white'>
-             <div className='md:w-[60%] p-10'>
+             <div className='md:w-[60%] md:p-10 p-5'>
                  <img
                  className=''
                  src={logo}

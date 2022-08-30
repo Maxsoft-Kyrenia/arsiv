@@ -10,6 +10,7 @@ import DemoAccount from '../Pages/DemoAccount'
 const Layout = () => {
   return (
    <>
+   {/* Routes Defined also with component to load up */}
    <Routes>
        <Route path='/' element={<Homepage/>}></Route>
        <Route path='/contact' element={<ContactusPage/>}></Route>

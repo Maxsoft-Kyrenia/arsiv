@@ -13,7 +13,7 @@ const Sectiontwo = () => {
                 alt=''
                 />
             </div> 
-            <div className='w-[100%] px-10 pt-10 pb-10'>
+            <div className='w-[100%] md:px-10 px-5 pt-10 pb-10'>
                 <div className='w-[90%]'>
                 <h1 className='font-semibold text-3xl text-sectionthreeheader'>Lorem ipsum dolor sit amet, 
 consetetur sadipscing.</h1>

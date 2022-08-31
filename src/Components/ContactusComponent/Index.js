@@ -57,7 +57,7 @@ const Index = () => {
 
                <section className='bg-secblack rounded-md p-6'>
 
-                     <div className='w-[50%]'>
+                     <div className='md:w-[50%]'>
                           <h3 className='font-semibold text-2xl'>Formu Doldurun 
                                 Ücretsiz Size Ulaşalım!
                            </h3>
@@ -72,19 +72,19 @@ const Index = () => {
                </section>
 
                <section className='bg-secblack rounded-md p-6 mt-5 mb-10'>
-                      <div className='w-[50%]'>
+                      <div className='md:w-[50%]'>
                             <h3 className='font-semibold text-2xl'>İletişim Kanalları</h3>
                        </div>
                               <p className='mt-5'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
                               nonumy eirmod tempor invid.
                               </p>
                
-                       <div className='md:flex mt-5'>
+                       <div className='md:flex mt-5 overflow-hidden'>
 
-                            <section className='flex bg-newblack p-3 rounded-md items-start mr-5'>
+                            <section className='flex bg-newblack p-3 rounded-md items-start mr-5 w-[96%] h-20'>
 
-                                <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="31.502" height="31.502" viewBox="0 0 31.502 31.502">
+                                <span className='bg-buttonback p-4 rounded-md mr-2 ml-2 h-10 w-10'>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 31.502 31.502">
 							                  				 <path id="_x30_8.Whatsapp" d="M25.751,10A15.764,15.764,0,0,0,12.993,35l-2.166,5.71L17.088,38.9a15.583,15.583,0,0,0,8.663,2.6,15.751,15.751,0,1,0,0-31.5Zm8.387,22.288-1.693,1.654c-1.772,1.772-6.458-.158-10.593-4.332-4.135-4.135-5.985-8.821-4.332-10.553l1.693-1.693a1.713,1.713,0,0,1,2.363,0l2.481,2.481a1.64,1.64,0,0,1-.63,2.717,1.593,1.593,0,0,0-1.063,1.93,7.563,7.563,0,0,0,4.607,4.568A1.645,1.645,0,0,0,28.9,28a1.64,1.64,0,0,1,2.717-.63L34.1,29.846A1.856,1.856,0,0,1,34.138,32.288Z" transform="translate(-10 -10)" fill="#fff"/>
 							                  			</svg>	
                                 </span>
@@ -96,9 +96,9 @@ const Index = () => {
                              </section>
 
 
-                              <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5'>
+                              <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5 w-[96%] h-20'>
                
-                                   <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
+                                   <span className='bg-buttonback p-4 rounded-md mr-2 ml-2  h-10 w-10'>
                                         <svg id="email" xmlns="http://www.w3.org/2000/svg" width="31.502" height="23.208" viewBox="0 0 31.502 23.208">
 							               			       	<g id="Group_39" data-name="Group 39" transform="translate(0 6.546)">
 							               			       	  <g id="Group_38" data-name="Group 38" transform="translate(0 0)">
@@ -124,9 +124,10 @@ const Index = () => {
                </div>
 
              <div className='md:flex mt-5'>
-             <section className='flex bg-newblack mr-2 rounded-md items-center md:w-[50%] h-48px p-3'>
-                 <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
-                 <svg xmlns="http://www.w3.org/2000/svg" width="28.346" height="32.251" viewBox="0 0 28.346 32.251">
+             <section className='flex bg-newblack mr-2 rounded-md items-center md:w-[50%] h-48px p-3 w-[96%] h-20'>
+
+                 <span className='bg-buttonback p-4 rounded-md mr-2 ml-2  h-10 w-10'>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="38.346" height="32.251" viewBox="0 0 28.346 32.251">
 											<g id="location" transform="translate(-31)">
 											  <g id="Group_51" data-name="Group 51" transform="translate(34.779)">
 												<g id="Group_50" data-name="Group 50" transform="translate(0)">
@@ -142,16 +143,17 @@ const Index = () => {
 										</svg>	
                  </span>
                    <div className='ml-3'>
-                   <p>Headquarters:</p>
+                   <p className='text-sm'>Headquarters:</p>
                     <span className=''>
-                    <p className='font-semibold md:w-[80%]'>Suite 15, 1st Floor, Oliaji Trade 
+                    <p className='md:font-semibold md:w-[80%] text-xs font-medium'>Suite 15, 1st Floor, Oliaji Trade 
 											Centre, Francis Rachel Street, 
 											Victoria, Mahe, P.O. Box 1004,</p>
                     </span>
                    </div>
                </section>
-               <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5'>
-                 <span className='bg-buttonback p-4 rounded-md mr-2 ml-2'>
+               <section className='flex bg-newblack p-3 rounded-md items-start md:mt-0 mt-5 w-[96%] h-20'>
+
+                 <span className='bg-buttonback p-4 rounded-md mr-2 ml-2  h-10 w-10'>
                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
 											<path id="phone-call" d="M27.131,20.44c-.074-.058-5.431-3.92-6.9-3.643-.7.124-1.1.6-1.909,1.561-.13.155-.441.526-.683.789a11.265,11.265,0,0,1-1.486-.6,12.33,12.33,0,0,1-5.689-5.689,11.212,11.212,0,0,1-.6-1.486c.265-.243.635-.554.794-.688.954-.8,1.434-1.2,1.558-1.906.255-1.458-3.6-6.853-3.645-6.9A2.06,2.06,0,0,0,7.03,1C5.466,1,1,6.793,1,7.769c0,.057.082,5.82,7.189,13.05C15.412,27.918,21.174,28,21.231,28,22.208,28,28,23.534,28,21.97A2.055,2.055,0,0,0,27.131,20.44Z" transform="translate(-1 -1)" fill="#fff"/>
 										</svg>

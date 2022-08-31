@@ -68,7 +68,7 @@ const Footer = () => {
                            {/* Quick Links GENERAL SECTION */}
 
                        {/* Google play store and apple store images */}
-                         <section className='md:flex-col flex mt-10 ml-4'>
+                         <section className='md:flex-col flex md:mt-10 mt-5 ml-4'>
                                   <img
                                    className='md:w-[60%] w-[25%] md:mr-0 mr-10'
                                   src={google_play}

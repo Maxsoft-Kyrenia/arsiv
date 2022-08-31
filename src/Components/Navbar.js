@@ -1,15 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../assets/logo.svg'
 import {IonIcon} from "react-ion-icon";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+
   //This open controls the menu icon when using mobile devices
   const [open, setOpen] = useState(true)
   //This controls the opening of the platform item children,
   const [menuopen, setmenuOpen] = useState(false)
   //This opens the language toggle to access the language options
   const [langopen, setlangOpen] = useState(false)
+
+  const location = useLocation();
+  useEffect(() => {
+     console.log(open ? 'close': setOpen(!open))
+  }, [location]);
 
   return (
      //First Div wrapping the whole Navbar

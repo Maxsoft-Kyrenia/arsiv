@@ -12,28 +12,27 @@ const Index = () => {
           {/*Form*/}
                  <div>
                        <div className='bg-mailsection p-5 md:mt-0 mt-10 text-white'>
-                             <div className='md:flex'>
+                       <div className='md:flex'>
 
-                                  <section className='text-start flex flex-col'>
-                                         <label className='font-semibold'>Adınız</label>
-                                        <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-fit'/>
-                                  </section>
+                              <section className='text-start flex flex-col'>
+                              <label className='font-semibold'>Adınız</label>
+                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit '/>
+                              </section>
+                              <section className='text-start flex flex-col md:mt-0 mt-2'>
+                              <label className='font-semibold'>Soyadınız</label>
+                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit'/>
+                              </section>
 
-                                  <section className='text-start flex flex-col'>
-                                      <label className='font-semibold'>Soyadınız</label>
-                                      <input className='bg-buttonback p-2 mt-2 rounded-md w-fit'/>
-                                 </section>
-
-                             </div>
+                         </div>      
 
                             <section className='text-start mt-5'>
                                  <label className=' font-semibold'>E-posta</label>
-                                <input className='bg-buttonback w-[96%] p-2 mt-2 rounded-md'/>
+                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
                              </section>
 
                             <section className='text-start mt-5'>
                                 <label className=' font-semibold'>Telefon</label>
-                                <input className='bg-buttonback w-[96%] p-2 mt-2 rounded-md'/>
+                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
                            </section>
 
 

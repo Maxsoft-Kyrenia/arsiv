@@ -11,6 +11,7 @@ import Sectionsix from '../Components/HomeComponents/Sectionsix'
 import Sectionthree from '../Components/HomeComponents/Sectionthree'
 
 const Homepage = () => {
+
   return (
     <div className='bg-black pt-16 font-raleway'>
       {/*FIRST SECTION*/}

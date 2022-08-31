@@ -1,7 +1,7 @@
 import React from 'react'
 import Star from '../../assets/star_icon.svg'
 import Sideimg from '../../assets/home_slide_img.png'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 const HeroSection = () => {
 

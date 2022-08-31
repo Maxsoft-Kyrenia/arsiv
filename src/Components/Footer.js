@@ -91,7 +91,7 @@ const Footer = () => {
              
               {/* Maxsoftlab Logo */}
              <img
-             className='bottom-0 right-0 float-right mx-10 md:w-[10%] md:mt-0 mt-20'
+             className='bottom-0 right-0 float-right mx-10 md:w-[10%] md:mt-0 mt-28'
              src={maxsoftlab_logo}
              alt='logo'
              />

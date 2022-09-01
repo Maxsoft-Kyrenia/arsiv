@@ -23,16 +23,16 @@ const Navbar = () => {
     
     
     {/* Menu Bar Container */}
-     <div className='flex md:mx-20 mx-8 justify-between z-0'>
+     <div className='flex md:mx-20 mr-8 ml-4 justify-between z-0'>
 
 
          {/* LOGO AND NAVIGATION LINKS */}
-          <div className='md:flex mt-5 md:mt-0'>
+          <div className='md:flex mt-1 md:mt-0'>
 
               {/* LOGO  */}
                   <Link to='/' className=''>
                          <img
-                             className=' opacity-85 cursor-pointer'
+                             className=' opacity-85 cursor-pointer w-[80%]'
                              src={Logo}
                              alt='Logo'
                          />
@@ -40,9 +40,9 @@ const Navbar = () => {
                {/* LOGO  */}
 
                  {/* Menu toogle open and close  */}
-                      <div onClick={() => setOpen(!open)} className='text-4xl absolute right-3 top-6 cursor-pointer md:hidden md: items-center pt-[-3]'>
-                            <ion-icon name={open ? 'menu': 'close'}></ion-icon>
-                      </div>
+                      <span onClick={() => setOpen(!open)} className='text-3xl absolute right-3 top-6 cursor-pointer md:hidden md: items-center pt-[6] justify-center flex'>
+                            <ion-icon name={open ? 'menu': 'close'} ></ion-icon>
+                      </span>
                  {/* Menu toogle open and close  */}
 
                {/* Navigation Items Group [Unordered List] */}   
@@ -98,7 +98,7 @@ const Navbar = () => {
          {/* LOGO AND NAVIGATION LINKS */}
 
                  {/* Buttons on Navbar */}
-                      <div className='flex z-0'>
+                      <div className='flex z-0 mt-0'>
         <Link to='/demoaccount' className=''>  
       <button 
       className={`bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l md:p-3 md:rounded-md md:font-semibold md:px-6 md:mx-3 hidden md:block`}>
@@ -106,12 +106,12 @@ const Navbar = () => {
         </button>
            </Link>
         <button onClick={() => setlangOpen(!langopen)}
-      className='bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l md:p-3 p-2 h-fit md:mt-0 mt-5 rounded-md font-semibold md:px-4 px-5 flex flex-row justify-center items-center text-center md:mx-0 mx-5 text-base'>
+      className='bg-gradient-to-r md:mr-0 mr-4 from-fromdark to-tolight hover:bg-gradient-to-l md:p-3 p-2 h-fit md:mt-0 mt-5 rounded-md font-semibold md:px-4 px-5 flex flex-row justify-center items-center text-center md:mx-0 mx-5 text-base'>
       EN
       <span  className='ml-2 mt-1' >
       <IonIcon name="chevron-down-outline"/>
       </span>
-      <span className={`${langopen ? 'absolute z-10 mt-28 bg-buttonback text-white text-start p-7 rounded-md' : 'hidden'}`}>
+      <span className={`${langopen ? 'absolute z-10 mt-48 bg-buttonback text-white text-start p-7 rounded-md' : 'hidden'}`}>
         <ul>
    <li className='m-1'>ENG</li>
       <li className='m-1'>TURK</li>
@@ -162,7 +162,7 @@ const Navbar = () => {
           {/* Menu bar for mobile devices */}
 
       {/* Divider for menu bar */}
-      <hr className='text-divider h-2 md:mx-16 md:mt-4 mt-2'></hr>
+      <hr className='text-divider h-2 md:mx-16 md:mt-4 mt-0'></hr>
        {/* Divider for menu bar */}
 
 

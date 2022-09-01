@@ -106,7 +106,7 @@ const Navbar = () => {
         </button>
            </Link>
         <button onClick={() => setlangOpen(!langopen)}
-      className='bg-gradient-to-r md:mr-0 mr-4 from-fromdark to-tolight hover:bg-gradient-to-l md:p-3 p-2 h-fit md:mt-0 mt-5 rounded-md font-semibold md:px-4 px-5 flex flex-row justify-center items-center text-center md:mx-0 mx-5 text-base'>
+      className='bg-gradient-to-r md:mr-0 mr-4 from-fromdark to-tolight hover:bg-gradient-to-l transition-colors duration-200 delay-200 md:p-3 p-2 h-fit md:mt-0 mt-5 rounded-md font-semibold md:px-4 px-5 flex flex-row justify-center items-center text-center md:mx-0 mx-5 text-base'>
       EN
       <span  className='ml-2 mt-1' >
       <IonIcon name="chevron-down-outline"/>

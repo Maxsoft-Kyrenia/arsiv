@@ -49,7 +49,7 @@ const HeroSection = () => {
         </div>
         <div className='flex items-center justify-center'>
           <img
-          className='h-[90%] md:float-right text-center md:mt-0 mt-10'
+          className='h-[90%] md:float-right text-center md:mt-0 mt-10 '
           src={Sideimg}
           alt='sideimg'
           />

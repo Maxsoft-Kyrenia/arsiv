@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import grouppeople from '../../assets/grouppeople.jpg'
 import logo from '../../assets/logo.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const SectionFour = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
     <div className='md:p-10 p-2 mt-10 rounded-md mb-10'>
         <div className='md:flex bg-black text-white'>
              <div className='md:w-[60%] md:p-10 p-5'>
                  <img
+                 data-aos="fade-up"
                  className=''
                  src={logo}
                  alt=''

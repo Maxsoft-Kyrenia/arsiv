@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import plat_two_scene from '../../assets/plat_two_scene.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectiontwo = () => {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
   return (
     <div className='bg-white mb-40 text-black font-raleway'>
     <div className='md:flex md:mx-32 pt-20'>
@@ -21,6 +26,7 @@ const Sectiontwo = () => {
          </div>
          <div>
              <img
+             data-aos="fade-left"
              className='md:mr-10 md:mt-0 mt-10'
              src={plat_two_scene}
              alt=''

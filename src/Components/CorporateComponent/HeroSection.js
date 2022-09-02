@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import abouttwoimg from '../../assets/abouttwoimg.jpg'
 import abouttopimg from '../../assets/abouttopimg.jpg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const HeroSection = () => {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
   return (
     <div className='bg-newblack text-white'>
        <div className='md:flex w-[100%]'>
@@ -23,6 +28,7 @@ quirlige Eva und.</h1>
             </div> 
             <div className='w-[100%] h-fit'>
                 <img
+                data-aos="fade-up"
                 className=''
                 src={abouttopimg}
                 alt=''

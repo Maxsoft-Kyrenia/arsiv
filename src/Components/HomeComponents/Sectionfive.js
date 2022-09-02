@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import corporatemanpng from '../../assets/corporatemanpng.png'
 import guvenicons from '../../assets/guvenicons.svg'
 import ozsermayeicon from '../../assets/ozsermayeicon.svg'
 import deneyimiconsi from '../../assets/deneyimiconsi.svg'
 import alsaticons from '../../assets/alsaticons.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionfive = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
-    <div className='bg-white md:px-20 px-3 md:mt-32 mt-0'>
+    <div data-aos="fade-up" className='bg-white md:px-20 px-3 md:mt-32 mt-0 motion-safe:animate-fadeIn'>
          <div className='bg-gradient-to-r from-fromdark to-tolight flex relative w-[100%] md:mt-60 mt-20 h-[160%] pt-10 md:px-12 px-5 pb-32 rounded-md'>
-        <div className='md:w-60% md:min-w-[50%] md:block hidden'>
+        <div data-aos="fade-right" className='md:w-60% md:min-w-[50%] md:block hidden'>
                 <img
                 className='absolute -top-[72px] w-[40%]'
                 src={corporatemanpng}

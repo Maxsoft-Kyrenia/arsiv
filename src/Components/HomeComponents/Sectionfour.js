@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import homescfourimg from '../../assets/homescfourimg.png'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionfour = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
-    <div className='bg-sectionfourbackground pt-16 pb-'>
+    <div data-aos="fade-up" className='bg-sectionfourbackground pt-16 pb- motion-safe:animate-fadeIn'>
          <div className='md:flex md:mx-20'>
              <div className='md:mr-40 md:m-20 md:w-[90%] mx-8'>
                    <div className=''>
@@ -25,7 +30,7 @@ const Sectionfour = () => {
                        Demo Hesap Olustur
                    </button>
              </div>
-             <div className='flex justify-center items-center text-center mt-10'>
+             <div data-aos="fade-left" className='flex justify-center items-center text-center mt-10'>
                 <img
                 className='float-right w-[90%]'
                 src={homescfourimg}

@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import hm_one_icon1 from '../../assets/hm_one_icon1.svg'
 import hm_one_icon2 from '../../assets/hm_one_icon2.svg'
 import hm_one_icon3 from '../../assets/hm_one_icon3.svg'
 import hm_one_icon4 from '../../assets/hm_one_icon4.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionsix = () => {
+   useEffect(() => {
+      Aos.init({duration: 2000});
+    }, []);
   return (
-    <div className='bg-section-six bg-cover mt-20 md:p-12 p-2 pt-10 opacity-90'>
+    <div data-aos="fade-up" className='bg-section-six bg-cover mt-20 md:p-12 p-2 pt-10 opacity-90 motion-safe:animate-fadeIn'>
          <div className='flex items-center justify-center text-center text-white'>
             <div className='md:w-[38%]'>
             <h4 className='text-2xl font-bold'>Lorem ipsum dolor sit amet, 

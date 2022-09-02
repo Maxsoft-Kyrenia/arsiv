@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroSection from '../Components/HomeComponents/HeroSection'
 import MailSection from '../Components/HomeComponents/MailSection'
 import NumbersSection from '../Components/HomeComponents/NumbersSection'
@@ -9,19 +9,26 @@ import Sectionnine from '../Components/HomeComponents/Sectionnine'
 import Sectionseven from '../Components/HomeComponents/Sectionseven'
 import Sectionsix from '../Components/HomeComponents/Sectionsix'
 import Sectionthree from '../Components/HomeComponents/Sectionthree'
+import CookieConsent from 'react-cookie-consent'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Homepage = () => {
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
 
   return (
     <div className='bg-black pt-16 font-raleway'>
       {/*FIRST SECTION*/}
-      <HeroSection/>
+      <HeroSection className='motion-safe:animate-fadeIn'/>
       
       {/*SECOND SECTION*/}
-      <NumbersSection/>
+      <NumbersSection className='motion-safe:animate-fadeIn'/>
 
       {/*THIRD SECTION*/}
-      <MailSection/>
+      <MailSection data-aos="fade-up" className='motion-safe:animate-fadeIn'/>
 
       {/*FOURTH SECTION*/}
       <Sectionthree/>
@@ -44,6 +51,10 @@ const Homepage = () => {
 
       {/*TENTH SECTION*/}
       <Sectionnine/>
+
+      <CookieConsent debug={true} className='motion-safe:animate-fadeIn'>
+      By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+      </CookieConsent >
       </div>
     </div>
   )

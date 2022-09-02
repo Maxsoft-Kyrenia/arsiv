@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import nineimg from '../../assets/nineimg.jpg'
 import newtradingicon from '../../assets/newtradingicon.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionseven = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+      }, []);
   return (
-    <div className='md:p-20 p-4 mt-10'>
+    <div data-aos="fade-up" className='md:p-20 p-4 mt-10 motion-safe:animate-fadeIn'>
         <div className='md:flex bg-sectionfourbackground'>
              <div className='md:w-[60%] md:p-10 p-4'>
                 <div className='md:w-[60%]'>

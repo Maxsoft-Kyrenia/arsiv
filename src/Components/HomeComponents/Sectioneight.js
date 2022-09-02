@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import meta from '../../assets/metatrader_img.svg'
 import logo from '../../assets/logo.svg'
 import apple from '../../assets/app_store.svg'
 import google from '../../assets/google_play.svg'
 import desktop from '../../assets/deskto_play.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectioneight = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
-    <div className='md:p-20 p-6 bg-buttonback mt-10'>
+    <div data-aos="fade-up" className='md:p-20 p-6 bg-buttonback mt-10 motion-safe:animate-fadeIn'>
          <div className='md:flex w-[100%] md:justify-between '>
-              <div className='w-[100%] mr-20'>
+              <div data-aos="fade-right" className='w-[100%] mr-20'>
                     <img
                     className='md:w-[90%]'
                     src={meta}

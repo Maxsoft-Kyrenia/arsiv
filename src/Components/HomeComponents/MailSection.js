@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Background from '../../assets/contactbg.jpg'
 import '../../assets/Mailsection.css';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const MailSection = () => {
+  
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
-    <div className='font-raleway md:px-20 px-5 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5'>
+    <div data-aos="fade-up" className='font-raleway md:px-20 px-5 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5 motion-safe:animate-fadeIn'>
          <div className='md:flex text-white z-10 flex-col md:flex-row '>
            <div className='mt-20 md:mt-10 md:flex flex-col justify-center items-center text-center md:justify-start md:items-start md:text-start'>
            <div className='md:w-[34%]'>

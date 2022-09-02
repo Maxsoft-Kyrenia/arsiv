@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
      //First Div wrapping the whole Navbar
-    <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative'>
+    <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative '>
     
     
     {/* Menu Bar Container */}
@@ -68,7 +68,9 @@ const Navbar = () => {
 
                       {/* Navigation Items List items */}  
                     <li onClick={() => setmenuOpen(!menuopen)} className='mx-2 flex flex-row hover:underline hover:transition-all hover:duration-500 ease-in' >
-                          PLATFORM
+                    <Link to='/platform' className=''>
+                              PLATFORM
+                            </Link>
                        <span  className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
                            <IonIcon name="chevron-down-outline"/>
                        </span>
@@ -141,7 +143,9 @@ const Navbar = () => {
            ANALYZES
            </Link>
            </li>
-           <li  className='mt-10'> PLATFORM
+           <li  className='mt-10'> <Link to='/platform' className=''>
+                              PLATFORM
+                            </Link>
            <span onClick={() => setmenuOpen(!menuopen)} className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
       <IonIcon name="chevron-down-outline"/>
       </span>

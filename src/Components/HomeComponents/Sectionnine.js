@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import sectionsevenbg from '../../assets/sectionsevenbg.png'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionnine = () => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
   return (
-    <div className='pt-20 md:pr-20 md:pl-20 md:px-0 px-4 pb-20'>
+    <div data-aos="fade-up" className='pt-20 md:pr-20 md:pl-20 md:px-0 px-4 pb-20 motion-safe:animate-fadeIn'>
         <div className='bg-sectionfourbackground rounded-md md:flex'>
              <div className='w-[100%] md:p-16 p-3'>
                  <h4 className='text-sectionthreeheader text-2xl font-bold'>Hemen Şimdi Kolay bir Şekilde 

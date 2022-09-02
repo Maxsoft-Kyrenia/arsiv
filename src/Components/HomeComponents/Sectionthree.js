@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import usercreate from '../../assets/usercreateicon.svg'
 import userkaricon from '../../assets/userkaricon.svg'
 import usermoneyicon from '../../assets/usermoneyicon.svg'
 import stepsaftericon from '../../assets/stepsaftericon.svg'
 import stepsbeforeicon from '../../assets/stepsbeforeicon.svg'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Sectionthree = () => {
+     useEffect(() => {
+          Aos.init({duration: 2000});
+        }, []);
   return (
-    <div className='bg-white font-raleway md:pt-24 pb-24 pt-7'>
+    <div data-aos="fade-up" className='bg-white font-raleway md:pt-24 pb-24 pt-7 motion-safe:animate-fadeIn'>
         <div className='items-center justify-center text-center flex'>
                <div className='md:w-[36%] w-[70%]'>
                <h4 className='md:text-2xl text-xl text-sectionthreeheader font-bold'>3 adımda kolayca yatırım yapmaya başlayın.</h4>

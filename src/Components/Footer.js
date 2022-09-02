@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
          //Main Div for footer
-         <div className='bg-black md:h-[375px] h-[550px] font-raleway'>
+         <div className='bg-black md:h-[375px] h-[550px] font-raleway motion-safe:animate-fadeIn'>
 
            {/* Logo and Links */}
              <div className='mt-0 bottom-0 right-0 left-0 w-[100%] md:h-[300px] h-[400px] bg-buttonback -skew-y-3 origin-left'>
@@ -39,7 +39,11 @@ const Footer = () => {
                                              <h3 className='font-bold text-xl'>Markets</h3>
                                              <p className='hover:underline cursor-pointer'>About us</p>
                                              <p className='hover:underline cursor-pointer'>Why THYFX Ltd.</p>
-                                             <p className='hover:underline cursor-pointer'>Terms {'&'} Conditions</p>
+                                             <p className='hover:underline cursor-pointer'>
+                                             <Link to='/policy' className=''>
+                                             Terms {'&'} Conditions
+                                              </Link>
+                                              </p>
                                        </section>
                                   {/* Individual Item */}
                                    

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Background from '../../assets/contactbg.jpg'
 import '../../assets/Mailsection.css';
 import Aos from 'aos'
@@ -9,6 +9,21 @@ const MailSection = () => {
   useEffect(() => {
     Aos.init({duration: 2000});
   }, []);
+
+  const [adiniz, setadiniz] = useState('')
+  const [soyadiniz, setsoyadiniz] = useState('')
+  const [eposta, seteposta] = useState('')
+  const [telefon, settelefon] = useState('')
+
+  const submit = (() => {
+    if( adiniz || soyadiniz || eposta || telefon === null){
+        alert('Please fill all input')
+    }else {
+      alert('success')
+      const item = (adiniz, soyadiniz, eposta, telefon)
+    }
+  })
+
   return (
     <div data-aos="fade-up" className='font-raleway md:px-20 px-5 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5 motion-safe:animate-fadeIn'>
          <div className='md:flex text-white z-10 flex-col md:flex-row '>
@@ -45,23 +60,24 @@ const MailSection = () => {
                <div className='md:flex'>
                 <section className='text-start flex flex-col'>
                 <label className='font-semibold'>Adınız</label>
-               <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit '/>
+               <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit ' value={adiniz} onChange={(e) => {setadiniz(e.target.value)}}/>
                 </section>
                 <section className='text-start flex flex-col'>
                 <label className='font-semibold'>Soyadınız</label>
-               <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit'/>
+               <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit '  value={soyadiniz} onChange={(e) => {setsoyadiniz(e.target.value)}}/>
                 </section>
                </div>
                <section className='text-start mt-2'>
                 <label className=' font-semibold'>E-posta</label>
-               <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
+               <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'  value={eposta} onChange={(e) => {seteposta(e.target.value)}}/>
                 </section>
                 <section className='text-start mt-2'>
                 <label className=' font-semibold'>Telefon</label>
-               <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
+               <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'  value={telefon} onChange={(e) => {settelefon(e.target.value)}}/>
                 </section>
                 <button
                 className='mt-5 rounded-md p-2 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l md:w-[98%] w-[96%]'
+                onClick={submit}
                 >Gonder</button>
              </div>
            </div>

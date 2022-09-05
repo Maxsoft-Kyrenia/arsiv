@@ -10,6 +10,7 @@ import DemoAccount from '../Pages/DemoAccount'
     import ErrorPage from '../Pages/ErrorPage'
 import PolicyPage from '../Pages/PolicyPage'
 import TradingPage from '../Pages/TradingPage'
+import SpreadPage from '../Pages/SpreadPage'
 
 const Layout = () => {
   return (
@@ -24,6 +25,7 @@ const Layout = () => {
        <Route path='/policy' element={<PolicyPage/>}></Route>
        <Route path="*"  element={<ErrorPage/>}/>
        <Route path='/trading' element={<TradingPage/>}/>
+       <Route path='/spread' element={<SpreadPage/>}/>
    </Routes> 
    </>
   )

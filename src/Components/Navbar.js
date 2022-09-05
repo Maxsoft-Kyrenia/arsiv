@@ -128,41 +128,41 @@ const Navbar = () => {
 
           {/* Menu bar for mobile devices */}
              <div className='bg-white h-full text-black float-right fixed right-0 top-0 z-10  block'>
-  <div className={`${open ? 'hidden transition-all duration-500 ease-in': 'm-12 transition-all duration-500 ease-in'} transition-all duration-500 ease-in`}>
-  <span onClick={() => setOpen(!open)} className='pr-10 pt-10 transition-all duration-500 ease-in'>
-  <ion-icon name={open ? 'menu': 'close'}></ion-icon>
-  </span>
-         <ul className={`${open ? 'hidden':'float-left pl-12 pr-16 mt-32 font-semibold text-base transition-all duration-500 ease-in'}`}>
-           <li className=''> 
-           <Link to='/corporate' className=''>
-           CORPORATE
-           </Link>
-        </li>
-           <li  className='mt-10'> 
-           <Link to='/' className=''>
-           ANALYZES
-           </Link>
-           </li>
-           <li  className='mt-10'> <Link to='/platform' className=''>
-                              PLATFORM
-                            </Link>
-           <span onClick={() => setmenuOpen(!menuopen)} className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
-      <IonIcon name="chevron-down-outline"/>
-      </span>
-           <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
-   <li className='m-1'>Test 1</li>
-      <li className='m-1'>Test 1</li>
-      <li className='m-1'>Test 1</li>
-   </span>
-           </li>
-           <li  className='mt-10'>
-           <Link to='/contact' className=''>
-           CONTACT
-           </Link>
-           </li>
-         </ul>
-  </div>
-            </div>
+                 <div className={`${open ? 'hidden transition-all duration-500 ease-in': 'm-12 transition-all duration-500 ease-in'} transition-all duration-500 ease-in`}>
+                        <span onClick={() => setOpen(!open)} className='pr-10 pt-10 transition-all duration-500 ease-in'>
+                        <ion-icon name={open ? 'menu': 'close'}></ion-icon>
+                        </span>
+                              <ul className={`${open ? 'hidden':'float-left pl-12 pr-16 mt-32 font-semibold text-base transition-all duration-500 ease-in'}`}>
+                                <li className=''> 
+                                <Link to='/corporate' className=''>
+                                CORPORATE
+                                </Link>
+                             </li>
+                                <li  className='mt-10'> 
+                                <Link to='/' className=''>
+                                ANALYZES
+                                </Link>
+                                </li>
+                                <li  className='mt-10'> <Link to='/platform' className=''>
+                                                   PLATFORM
+                                   </Link>
+                                      <span onClick={() => setmenuOpen(!menuopen)} className='ml-1 text-center mt-1 hover:underline hover:transition-all hover:duration-500 ease-in' >
+                                 <IonIcon name="chevron-down-outline"/>
+                                 </span>
+                                      <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
+                              <li className='m-1'>Test 1</li>
+                                 <li className='m-1'>Test 1</li>
+                                 <li className='m-1'>Test 1</li>
+                              </span>
+                                      </li>
+                                      <li  className='mt-10'>
+                                      <Link to='/contact' className=''>
+                                      CONTACT
+                                      </Link>
+                                      </li>
+                                    </ul>
+                             </div>
+               </div>
           {/* Menu bar for mobile devices */}
 
       {/* Divider for menu bar */}

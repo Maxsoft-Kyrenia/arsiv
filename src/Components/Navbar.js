@@ -75,8 +75,16 @@ const Navbar = () => {
                            <IonIcon name="chevron-down-outline"/>
                        </span>
                             <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
-                                <li className='m-1'>Test 1</li>
-                                <li className='m-1'>Test 1</li>
+                            <li className='m-1 cursor-pointer'>
+                              <Link to='/trading' className=''>
+                                Trading
+                                </Link>
+                              </li>
+                                                         <li className='m-1 cursor-pointer'>
+                              <Link to='/spread' className=''>
+                                Spread
+                                </Link>
+                              </li>
                                 <li className='m-1'>Test 1</li>
                             </span>
                       </li>   
@@ -150,8 +158,16 @@ const Navbar = () => {
                                  <IonIcon name="chevron-down-outline"/>
                                  </span>
                                       <span className={`${menuopen ? 'absolute z-10 mt-10 bg-buttonback text-white text-center p-7 rounded-md' : 'hidden'}`}>
-                              <li className='m-1'>Test 1</li>
-                                 <li className='m-1'>Test 1</li>
+                              <li className='m-1 cursor-pointer'>
+                              <Link to='/trading' className=''>
+                                Trading
+                                </Link>
+                              </li>
+                              <li className='m-1 cursor-pointer'>
+                              <Link to='/spread' className=''>
+                                Spread
+                                </Link>
+                              </li>
                                  <li className='m-1'>Test 1</li>
                               </span>
                                       </li>

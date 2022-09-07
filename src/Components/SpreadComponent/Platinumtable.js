@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Index = () => {
+const Platinumtable = () => {
 
   const [tabledata, settabledata] = useState('')
 
   const novalue = [
-    {symbol:"Standard", value:"001"},
-    {symbol:"Standard", value:"001"},
+    {symbol:"Platinum", value:"004"},
+    {symbol:"Platinum", value:"004"},
   ]
 
   return (
@@ -17,10 +17,10 @@ const Index = () => {
     <h1 className='font-bold text-base items-center text-center'> Spread</h1>
 
     <div className='flex justify-between mt-5'>
-       <button className='bg-white text-black p-3 w-[100%] md:mr-10 mr-2 rounded-md'>Standard</button>
+       <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/spread' className=''>Standard</Link></button>
        <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/gold' className=''>Gold</Link></button>
        <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/vip' className=''>VIP</Link></button>
-        <button className='bg-divider p-3 w-[100%] rounded-md'><Link to='/trading/platinum' className=''>Platinum</Link></button>
+        <button className='bg-white text-black p-3 w-[100%] rounded-md'><Link to='/trading/platinum' className=''>Platinum</Link></button>
     </div>
 
              <table className='bg-secblack w-full rounded-md border-spacing-y-2 p-5 border-separate mt-10'>
@@ -47,4 +47,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Platinumtable

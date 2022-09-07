@@ -11,6 +11,9 @@ import DemoAccount from '../Pages/DemoAccount'
 import PolicyPage from '../Pages/PolicyPage'
 import TradingPage from '../Pages/TradingPage'
 import SpreadPage from '../Pages/SpreadPage'
+import Goldtable from './SpreadComponent/Goldtable'
+import Viptable from './SpreadComponent/Viptable'
+import Platinumtable from './SpreadComponent/Platinumtable'
 
 const Layout = () => {
   return (
@@ -26,6 +29,9 @@ const Layout = () => {
        <Route path="*"  element={<ErrorPage/>}/>
        <Route path='/trading' element={<TradingPage/>}/>
        <Route path='/spread' element={<SpreadPage/>}/>
+       <Route path='/trading/gold' element={<Goldtable/>}/>
+       <Route path='/trading/vip' element={<Viptable/>}/>
+       <Route path='/trading/platinum' element={<Platinumtable/>}/>
    </Routes> 
    </>
   )

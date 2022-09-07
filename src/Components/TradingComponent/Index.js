@@ -3,7 +3,7 @@ import tradeicon from '../../assets/trade.svg'
 
 const Index = () => {
   return (
-    <div className='bg-black text-white mb-28 p-16 font-raleway'>
+    <div className='bg-black text-white mb-28 md:p-16 p-4 font-raleway'>
 
 <div className='justify-center flex flex-col items-center text-center'>
   {/*ICON*/}

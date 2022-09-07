@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Index = () => {
+const Goldtable = () => {
 
   const [tabledata, settabledata] = useState('')
 
   const novalue = [
-    {symbol:"Standard", value:"001"},
-    {symbol:"Standard", value:"001"},
+    {symbol:"Gold", value:"002"},
+    {symbol:"Gold", value:"002"},
   ]
+
 
   return (
     <div className='bg-black text-white mb-28 md:p-16 p-2 font-raleway'>
@@ -17,8 +18,8 @@ const Index = () => {
     <h1 className='font-bold text-base items-center text-center'> Spread</h1>
 
     <div className='flex justify-between mt-5'>
-       <button className='bg-white text-black p-3 w-[100%] md:mr-10 mr-2 rounded-md'>Standard</button>
-       <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/gold' className=''>Gold</Link></button>
+       <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/spread' className=''>Standard</Link></button>
+       <button className='bg-white text-black p-3 w-[100%] md:mr-10 mr-2 rounded-md'>Gold</button>
        <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/vip' className=''>VIP</Link></button>
         <button className='bg-divider p-3 w-[100%] rounded-md'><Link to='/trading/platinum' className=''>Platinum</Link></button>
     </div>
@@ -47,4 +48,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Goldtable

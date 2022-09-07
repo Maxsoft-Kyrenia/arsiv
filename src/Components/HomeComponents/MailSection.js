@@ -16,11 +16,16 @@ const MailSection = () => {
   const [telefon, settelefon] = useState('')
 
   const submit = (() => {
-    if( adiniz || soyadiniz || eposta || telefon === null){
-        alert('Please fill all input')
-    }else {
-      alert('success')
-      const item = (adiniz, soyadiniz, eposta, telefon)
+    if( adiniz == ''){
+        alert('Please fill in Adiniz')
+    }else if (soyadiniz == ''){
+      alert('Please fill in Soyadiniz')
+    }else if (eposta.length < 5){
+      alert('Please fill in eposta')
+    }else if (telefon.length < 10 ){
+      alert('Please fill in a valid telefon')
+    } else {
+      alert('Submitted Successfully')
     }
   })
 

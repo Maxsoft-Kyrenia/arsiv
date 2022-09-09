@@ -14,7 +14,7 @@ const Sectionfive = () => {
   return (
     <div data-aos="fade-up" className='bg-white md:px-20 px-3 md:mt-32 mt-0 motion-safe:animate-fadeIn'>
          <div className='bg-gradient-to-r from-fromdark to-tolight flex relative w-[100%] md:mt-60 mt-20 h-[160%] pt-10 md:px-12 px-5 pb-32 rounded-md'>
-        <div data-aos="fade-right" className='md:w-60% md:min-w-[50%] md:block hidden'>
+        <div className='md:w-60% md:min-w-[50%] md:block hidden'>
                 <img
                 className='absolute -top-[72px] w-[40%]'
                 src={corporatemanpng}

@@ -10,7 +10,7 @@ const HeroSection = () => {
                  <div className='md:w-[40%]'>
                   <h4 className='text-3xl font-bold'>
                   Join Forex Web with 
-                  THYFX!
+                  Odea FX
                   </h4>
                  </div>
 

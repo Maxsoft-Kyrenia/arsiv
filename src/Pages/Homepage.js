@@ -12,6 +12,7 @@ import Sectionthree from '../Components/HomeComponents/Sectionthree'
 import CookieConsent from 'react-cookie-consent'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { Helmet } from 'react-helmet';
 
 const Homepage = () => {
 
@@ -21,6 +22,9 @@ const Homepage = () => {
 
   return (
     <div className='bg-black pt-16 font-raleway'>
+       <Helmet>
+        <title>Home</title>
+      </Helmet>
       {/*FIRST SECTION*/}
       <HeroSection className='motion-safe:animate-fadeIn'/>
       

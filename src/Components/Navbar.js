@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
      //First Div wrapping the whole Navbar
-    <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative '>
+    <div className='bg-black text-white md:pt-5 font-raleway md:px-0 relative' onClick={() => (menuopen == false? console.log('close') : setmenuOpen(!menuopen))}>
     
     
     {/* Menu Bar Container */}
@@ -85,7 +85,6 @@ const Navbar = () => {
                                 Spread
                                 </Link>
                               </li>
-                                <li className='m-1'>Test 1</li>
                             </span>
                       </li>   
                      {/* Navigation Items List items */}  
@@ -135,7 +134,7 @@ const Navbar = () => {
 
 
           {/* Menu bar for mobile devices */}
-             <div className='bg-white h-full text-black float-right fixed right-0 top-0 z-10  block'>
+             <div className='bg-white h-full text-black float-right fixed right-0 top-0 z-10  block' onClick={() => (menuopen == false? console.log('close') : setmenuOpen(!menuopen))}>
                  <div className={`${open ? 'hidden transition-all duration-500 ease-in': 'm-12 transition-all duration-500 ease-in'} transition-all duration-500 ease-in`}>
                         <span onClick={() => setOpen(!open)} className='pr-10 pt-10 transition-all duration-500 ease-in'>
                         <ion-icon name={open ? 'menu': 'close'}></ion-icon>
@@ -168,7 +167,6 @@ const Navbar = () => {
                                 Spread
                                 </Link>
                               </li>
-                                 <li className='m-1'>Test 1</li>
                               </span>
                                       </li>
                                       <li  className='mt-10'>

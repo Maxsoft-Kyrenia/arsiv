@@ -3,6 +3,7 @@ import Background from '../../assets/contactbg.jpg'
 import '../../assets/Mailsection.css';
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import {toast} from 'react-toastify'
 
 const MailSection = () => {
   
@@ -17,15 +18,17 @@ const MailSection = () => {
 
   const submit = (() => {
     if( adiniz == ''){
-        alert('Please fill in Adiniz')
+        toast.error('Please fill in Adiniz')
     }else if (soyadiniz == ''){
-      alert('Please fill in Soyadiniz')
-    }else if (eposta.length < 5){
-      alert('Please fill in eposta')
+      toast.error('Please fill in Soyadiniz')
+    } else if (eposta.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null){
+      toast.error('Invalid posta')
     }else if (telefon.length < 10 ){
-      alert('Please fill in a valid telefon')
+      toast.error('Please fill in a valid telefon')
     } else {
-      alert('Submitted Successfully')
+      toast.success('Submitted Successfully')
+      const ref = document.title
+      console.log(ref)
     }
   })
 

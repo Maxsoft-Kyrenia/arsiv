@@ -5,6 +5,7 @@ import SectionFour from '../Components/CorporateComponent/SectionFour'
 import Sectiontwo from '../Components/CorporateComponent/Sectiontwo'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { Helmet } from 'react-helmet';
 
 const CorporatePage = () => {
   useEffect(() => {
@@ -12,6 +13,9 @@ const CorporatePage = () => {
   }, []);
   return (
     <div className='font-raleway'>
+       <Helmet>
+        <title>Corporate</title>
+      </Helmet>
 
       <div data-aos="fade-up">
       {/*FIRST SECTION*/}

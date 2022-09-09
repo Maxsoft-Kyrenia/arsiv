@@ -15,7 +15,7 @@ const Sectiontwo = () => {
              <div className='md:w-[40%]'>
               <h4 className='text-3xl font-bold'>
               Join Forex Web with 
-              THYFX!
+              Odea FX!
               </h4>
              </div>
 
@@ -26,7 +26,7 @@ const Sectiontwo = () => {
          </div>
          <div>
              <img
-             data-aos="fade-left"
+             data-aos="fade-up"
              className='md:mr-10 md:mt-0 mt-10'
              src={plat_two_scene}
              alt=''

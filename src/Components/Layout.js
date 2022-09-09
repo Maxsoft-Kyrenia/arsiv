@@ -14,6 +14,8 @@ import SpreadPage from '../Pages/SpreadPage'
 import Goldtable from './SpreadComponent/Goldtable'
 import Viptable from './SpreadComponent/Viptable'
 import Platinumtable from './SpreadComponent/Platinumtable'
+import { ToastContainer } from 'react-toastify';
+import SuccessPage from '../Pages/SuccessPage'
 
 const Layout = () => {
   return (
@@ -32,6 +34,7 @@ const Layout = () => {
        <Route path='/trading/gold' element={<Goldtable/>}/>
        <Route path='/trading/vip' element={<Viptable/>}/>
        <Route path='/trading/platinum' element={<Platinumtable/>}/>
+       <Route path='/success' element={<SuccessPage/>}/>
    </Routes> 
    </>
   )

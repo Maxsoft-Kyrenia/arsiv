@@ -38,7 +38,7 @@ const Footer = () => {
                                      <section className='mt-12 mx-6'>
                                              <h3 className='font-bold text-xl'>Markets</h3>
                                              <p className='hover:underline cursor-pointer'>About us</p>
-                                             <p className='hover:underline cursor-pointer'>Why THYFX Ltd.</p>
+                                             <p className='hover:underline cursor-pointer'>Why Odea FX.</p>
                                              <p className='hover:underline cursor-pointer'>
                                              <Link to='/policy' className=''>
                                              Terms {'&'} Conditions

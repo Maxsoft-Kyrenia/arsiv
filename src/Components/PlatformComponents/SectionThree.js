@@ -23,7 +23,7 @@ const Sectionthree = () => {
                  alt=''
                  />
                  <h1 className='md:text-3xl text-2xl font-semibold text-white mt-4'>METATRADER 5</h1>
-                 <p className='mt-2 text-white'>MetaTrader 4 platformu, dünya çapında acemiden profesyonele her seviyedeki yatırımcının en çok kullandığı işlem platformu olma özelliğini taşır. Çünkü MetaTrader 4 kullanırken kullanıcı dostu arayüzü ve özelleştirilebilir yapısı ile işlem performansınızı olumlu etkileyecek düzenlemeleri edinebilirsiniz.</p>
+                 <p className='mt-2 text-white'>MetaTrader 5 platformu, dünya çapında acemiden profesyonele her seviyedeki yatırımcının en çok kullandığı işlem platformu olma özelliğini taşır. Çünkü MetaTrader 5 kullanırken kullanıcı dostu arayüzü ve özelleştirilebilir yapısı ile işlem performansınızı olumlu etkileyecek düzenlemeleri edinebilirsiniz.</p>
                  <div className='md:flex mt-10 text-center'>
                  <img
                  className='md:w-[26%] mr-4'

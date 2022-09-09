@@ -1,6 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {toast} from 'react-toastify'
 
 const Index = () => {
+
+  const[adiniz, setadniniz] = useState('')
+  const[soyadiniz, setsoyadiniz] = useState('')
+  const[eposta, seteposta] = useState('')
+  const[telefon, settelefon] = useState('')
+  const[messaj, setmessaj]= useState('')
+
+  async function send() {
+    const item = (adiniz, soyadiniz, eposta, telefon, messaj)
+    if (adiniz == ''){
+        toast.error('Fill in Adiniz!')
+    } else if(soyadiniz == '') {
+      toast.error('Fill in Soyadiniz')
+    } else if (eposta.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null){
+      toast.error('Invalid posta')
+    } else if (telefon.length < 10){
+        toast.error('Invalid Phone')
+    } else if (messaj == ''){
+      toast.error('Please Fill in messaj')
+    }
+     else {
+      toast.success('Valid deets')
+      const ref = document.title
+      console.log(ref)
+
+    }
+  }
+
   return (
 
     //Main Div
@@ -16,35 +45,35 @@ const Index = () => {
 
                               <section className='text-start flex flex-col'>
                               <label className='font-semibold'>Adınız</label>
-                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit '/>
+                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit ' value={adiniz} onChange={(e) => setadniniz(e.target.value)}/>
                               </section>
                               <section className='text-start flex flex-col md:mt-0 mt-2'>
                               <label className='font-semibold'>Soyadınız</label>
-                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit'/>
+                             <input className='bg-buttonback p-2 mt-2 rounded-md mr-2 w-[96%] md:w-fit' value={soyadiniz} onChange={(e) => setsoyadiniz(e.target.value)}/>
                               </section>
 
                          </div>      
 
                             <section className='text-start mt-5'>
                                  <label className=' font-semibold'>E-posta</label>
-                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
+                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md' value={eposta} onChange={(e) => seteposta(e.target.value)}/>
                              </section>
 
                             <section className='text-start mt-5'>
                                 <label className=' font-semibold'>Telefon</label>
-                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md'/>
+                                <input className='bg-buttonback md:w-[98%] w-[96%] p-2 mt-2 rounded-md' value={telefon} onChange={(e) => settelefon(e.target.value)} type='tel'/>
                            </section>
 
 
                            <section className='text-start mt-5 flex flex-col'>
                                 <label className=' font-semibold'>Messaj</label>
-                                <textarea className='bg-buttonback rounded-md'>
+                                <textarea className='bg-buttonback rounded-md p-2' value={messaj} onChange={(e) => setmessaj(e.target.value)}>
                                 </textarea>
                            </section>
 
 
                       <button
-                           className='mt-10 rounded-md p-2 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l w-[96%]'
+                           className='mt-10 rounded-md p-2 bg-gradient-to-r from-fromdark to-tolight hover:bg-gradient-to-l w-[96%]' onClick={send}
                            >Gonder
                       </button>
 

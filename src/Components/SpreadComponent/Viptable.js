@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Viptable = () => {
+
+  const navigate = useNavigate()
 
   const [tabledata, settabledata] = useState('')
 
@@ -9,6 +11,15 @@ const Viptable = () => {
     {symbol:"VIP", value:"003"},
     {symbol:"VIP", value:"003"},
   ]
+  const standard = () => {
+    navigate('/spread')
+  }
+  const platinum = () => {
+   navigate('/trading/platinum')
+ }
+ const gold = () => {
+   navigate('/trading/gold')
+ }
 
   return (
     <div className='bg-black text-white mb-28 md:p-16 p-2 font-raleway'>
@@ -17,10 +28,10 @@ const Viptable = () => {
     <h1 className='font-bold text-base items-center text-center'> Spread</h1>
 
     <div className='flex justify-between mt-5'>
-       <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/spread' className=''>Standard</Link></button>
-       <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/gold' className=''>Gold</Link></button>
-       <button className='bg-white text-black p-3 w-[100%] md:mr-10 mr-2 rounded-md'><Link to='/trading/vip' className=''>VIP</Link></button>
-        <button className='bg-divider p-3 w-[100%] rounded-md'><Link to='/trading/platinum' className=''>Platinum</Link></button>
+    <button className='bg-divider p-3 rounded-md w-[100%] md:mr-10 mr-2' onClick={standard}>Standard</button>
+   <button className='bg-divider p-3 w-[100%] md:mr-10 mr-2 rounded-md' onClick={gold}>Gold</button>
+   <button className='bg-white text-black p-3 w-[100%] md:mr-10 mr-2 rounded-md'>VIP</button>
+    <button className='bg-divider p-3 w-[100%] rounded-md' onClick={platinum}>Platinum</button>
     </div>
 
              <table className='bg-secblack w-full rounded-md border-spacing-y-2 p-5 border-separate mt-10'>

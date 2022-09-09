@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import {toast} from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 
 const Index = () => {
+
+  const navigate = useNavigate()
+
+  const APIURL = ('https://odeaapi.fxcrm.me/api/new')
 
   const[adiniz, setadniniz] = useState('')
   const[soyadiniz, setsoyadiniz] = useState('')
@@ -10,7 +15,12 @@ const Index = () => {
   const[messaj, setmessaj]= useState('')
 
   async function send() {
-    const item = (adiniz, soyadiniz, eposta, telefon, messaj)
+    const ref = document.title
+    console.log(ref)
+    const name = adiniz && soyadiniz
+    const email = eposta
+    const phone = telefon
+    const data = {name, email, phone, messaj, ref}
     if (adiniz == ''){
         toast.error('Fill in Adiniz!')
     } else if(soyadiniz == '') {
@@ -23,10 +33,22 @@ const Index = () => {
       toast.error('Please Fill in messaj')
     }
      else {
-      toast.success('Valid deets')
-      const ref = document.title
-      console.log(ref)
-
+       await fetch((APIURL), {
+         method: 'POST',
+         body:JSON.stringify(data),
+         headers: {
+           "Content-Type": 'application/json',
+           "token": "2s98XDwWauJNjpXQRFvPgUwQFQrEEQ"
+         }
+       }).then(res => res.json())
+         .then(data => {
+           if(data.error == true ){
+             toast.info(data.msg)
+           } else {
+            toast.success('Success')
+            navigate('/success')
+           }
+         })
     }
   }
 

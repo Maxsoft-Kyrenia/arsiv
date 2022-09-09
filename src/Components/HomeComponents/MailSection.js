@@ -3,9 +3,12 @@ import Background from '../../assets/contactbg.jpg'
 import '../../assets/Mailsection.css';
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-toastify'
 
 const MailSection = () => {
+
+  const navigate = useNavigate()
   
   useEffect(() => {
     Aos.init({duration: 2000});
@@ -15,8 +18,15 @@ const MailSection = () => {
   const [soyadiniz, setsoyadiniz] = useState('')
   const [eposta, seteposta] = useState('')
   const [telefon, settelefon] = useState('')
+  const APIURL = ('https://odeaapi.fxcrm.me/api/new')
 
-  const submit = (() => {
+  async function submit() {
+    const ref = document.title
+      console.log(ref)
+      const name = adiniz && soyadiniz
+      const email = eposta
+      const phone = telefon
+      const data = {name, email, phone, ref}
     if( adiniz == ''){
         toast.error('Please fill in Adiniz')
     }else if (soyadiniz == ''){
@@ -26,11 +36,24 @@ const MailSection = () => {
     }else if (telefon.length < 10 ){
       toast.error('Please fill in a valid telefon')
     } else {
-      toast.success('Submitted Successfully')
-      const ref = document.title
-      console.log(ref)
-    }
-  })
+      await fetch((APIURL), {
+        method: 'POST',
+        body:JSON.stringify(data),
+        headers: {
+          "Content-Type": 'application/json',
+          "token": "2s98XDwWauJNjpXQRFvPgUwQFQrEEQ"
+        }
+      }).then(res => res.json())
+        .then(data => {
+          if(data.error == true ){
+            toast.info(data.status)
+          } else {
+           toast.success('Success')
+           navigate('/success')
+          }
+        })
+   }
+   }
 
   return (
     <div data-aos="fade-up" className='font-raleway md:px-20 px-5 bg-hero-pattern bg-cover md:pt-20 pb-20 pt-5 motion-safe:animate-fadeIn'>
